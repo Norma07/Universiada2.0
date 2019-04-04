@@ -18,10 +18,20 @@
 
   </head>
   <body>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-12 wrapper-img-top">
+                <img src="{{asset('images/patrocinadores.png')}}" alt="" class="img-fluid">
+              </div>
+          </div>
+        </div>
+
+
+
       <div class="container-fluid">
           <div class="row">
               <div class="col-12 wrapper-img-top">
-                <img src="{{asset('images/wraper.jpg')}}" alt="" class="img-fluid">
+                <img src="{{asset('images/nav.JPG')}}" alt="" class="img-fluid">
               </div>
           </div>
       </div>
@@ -67,25 +77,7 @@
         @yield('content')
     </main>
 
-  <footer class="bd-footer text-muted text-center ">
-      <div class="container-fluid">
-          <div class="row">
-              <div class ="col-12">
-                <img src="{{asset('images/LogoConade.png')}}" alt="" id="patrocinadores">
-                <img src="{{asset('images/logosep.png')}}" alt="" id="patrocinadores">
-                <img src="{{asset('images/logofisu.png')}}" alt="" id="patrocinadores">
-                <img src="{{asset('images/logoconde.png')}}" alt="" id="patrocinadores">
-                <img src="{{asset('images/universiada.png')}}" alt="" id="patrocinadores">
-                <img src="{{asset('images/uady.png')}}" alt="" id="patrocinadores">
-                <img src="{{asset('images/logoyucatan.png')}}" alt="" id="patrocinadores">
-                <img src="{{asset('images/logomerida.png')}}" alt="" id="patrocinadores">
-                <img src="{{asset('images/jaguar.png')}}" alt="" id="patrocinadores">
-                <img src="{{asset('images/logounies.png')}}" alt="" id="patrocinadores">
-              </div>
-          </div>
-      </div>
-            
-            
+  <footer class="bd-footer text-muted text-center ">      
             <div id="bandgold">
 
             </div>    
