@@ -14,3 +14,6 @@ Route::get('/', 'HomeController@index');
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/', ['uses' => 'HomeController@index', 'as' =>'index.index']);
+Route::get('/Ajedrez', ['uses' => 'ViewController@ajedrez', 'as' =>'ajedrez.index']);
+Route::get('/Disciplinas', ['uses' => 'ViewController@disciplinas', 'as' =>'disciplinas.index']);

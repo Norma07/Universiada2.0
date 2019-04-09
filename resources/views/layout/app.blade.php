@@ -43,16 +43,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{route('index.index')}}">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Acerca De</a>
+                    <a class="nav-link" href="{{route('ajedrez.index')}}">Acerca De</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Noticias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Disciplinas</a>
+                    <a class="nav-link" href="{{route('disciplinas.index')}}">Disciplinas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Cronograma</a>

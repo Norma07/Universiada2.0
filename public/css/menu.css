@@ -68,3 +68,23 @@ p{
 color: #00162c 
  
 }
+.card-img-top{
+width: 200px;
+height: 200px;
+
+}
+
+#card{
+    margin: 5px;    
+}
+#unis{
+    height: 50px;
+    width: 50px;
+}
+.btn-primary{
+    background-color: #00162c;
+    border-color: #00162c;
+}
+.btn-primary:hover{
+    background-color: #c79316;
+}

@@ -13,10 +13,10 @@ src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2"></script>
                         <img src="{{asset('images/wraper.jpg')}}" class="d-block img-fluid " alt="...">
                         </div>
                         <div class="carousel-item" data-interval="2000">
-                        <img src="{{asset('images/wraper.jpg')}}" class="d-block img-fluid" alt="...">
+                        <img src="{{asset('images/bienvenidos.JPG')}}" class="d-block img-fluid" alt="...">
                         </div>
                         <div class="carousel-item">
-                        <img src="{{asset('images/wraper.jpg')}}" class="d-block img-fluid" alt="...">
+                        <img src="{{asset('images/Rmedios.jpg')}}" class="d-block img-fluid" alt="...">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -33,10 +33,27 @@ src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2"></script>
             </div>
         </div>  
 
+        <div class="container-fluid">
+            <div class="row">
+                <div class ="col-12">
+                    <marquee onmouseout="this.start()" onmouseover="this.stop()" scrollamount="20">
+                        <img src="{{asset('images/modelo.png')}}" id ="unis" alt="">
+                        <img src="{{asset('images/mayab.png')}}" id ="unis" alt="">
+                        <img src="{{asset('images/montejo.png')}}" id ="unis" alt="">
+                        <img src="{{asset('images/TECNOLOGICO.png')}}" id ="unis" alt="">
+                        <img src="{{asset('images/rogers.png')}}" id ="unis" alt="">
+
+                    </marquee>
+                </div>
+            </div>
+        </div>
+
         <div class ="container-fluid" id ="slider">
             <div class ="row">
                 <div class ="col-6 wrapper-img-top">
+            <strong>
                 <h1 id ="title">Noticias Destacadas</h1>
+            </strong>
                 <div class="bd-example">
                     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -92,6 +109,21 @@ src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2"></script>
             </div>
 
 
+        </div>
+    </div>
+
+    <div class = "container-fluid">
+        <div class="row">
+            <div class="col-8">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" 
+               src="https://www.youtube.com/embed/O_H4r1Woqvw" 
+               frameborder="0" allow="accelerometer; autoplay; 
+               encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+ 
+            </div>
+            </div>
         </div>
     </div>
 
