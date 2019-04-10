@@ -61,12 +61,22 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
-    {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+    protected function create(UserRequest $request)
+    {   
+            $user = new User;
+            $user->name = $request->input('name');
+            $user->email = $request->input('email');
+            $user->password = bcrypt( $request->input('password') );
+            
+            if(User::where('email', $user->email)->exists()){
+                return back()->with('info','El usuario ya existe');
+            }else{
+                $user->save();
+                $user
+                ->roles()
+                ->attach(Role::where('name', 'admin')->first());
+                return redirect("/home");
+            }
+            
     }
 }

@@ -10,10 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'HomeController@index');
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/', ['uses' => 'HomeController@index', 'as' =>'index.index']);
+Route::get('/', ['uses' =>'ViewController@index', 'as' =>'index.index']);
 Route::get('/Ajedrez', ['uses' => 'ViewController@ajedrez', 'as' =>'ajedrez.index']);
 Route::get('/Disciplinas', ['uses' => 'ViewController@disciplinas', 'as' =>'disciplinas.index']);
+Route::get('/AdminIndex',['uses' => 'HomeController@index', 'as' => 'administrator.index']);
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
