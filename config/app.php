@@ -10,6 +10,10 @@ return [
     | This value is the name of your application. This value is used when the
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
+<<<<<<< HEAD
+=======
+    |
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
     */
 
     'name' => env('APP_NAME', 'Laravel'),
@@ -21,7 +25,11 @@ return [
     |
     | This value determines the "environment" your application is currently
     | running in. This may determine how you prefer to configure various
+<<<<<<< HEAD
     | services your application utilizes. Set this in your ".env" file.
+=======
+    | services the application utilizes. Set this in your ".env" file.
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
     |
     */
 
@@ -53,6 +61,11 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+<<<<<<< HEAD
+=======
+    'asset_url' => env('ASSET_URL', null),
+
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -94,6 +107,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
     | Encryption Key
     |--------------------------------------------------------------------------
     |
@@ -123,6 +137,33 @@ return [
     'log' => env('APP_LOG', 'single'),
 
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
+=======
+    | Faker Locale
+    |--------------------------------------------------------------------------
+    |
+    | This locale will be used by the Faker PHP library when generating fake
+    | data for your database seeds. For example, this will be used to get
+    | localized telephone numbers, street address information and more.
+    |
+    */
+
+    'faker_locale' => 'en_US',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Encryption Key
+    |--------------------------------------------------------------------------
+    |
+    | This key is used by the Illuminate encrypter service and should be set
+    | to a random, 32 character string, otherwise these encrypted strings
+    | will not be safe. Please do this before deploying an application!
+    |
+    */
+
+    'key' => env('APP_KEY'),
+
+    'cipher' => 'AES-256-CBC',
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 
     /*
     |--------------------------------------------------------------------------
@@ -166,7 +207,10 @@ return [
         /*
          * Package Service Providers...
          */
+<<<<<<< HEAD
         Laravel\Tinker\TinkerServiceProvider::class,
+=======
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 
         /*
          * Application Service Providers...
@@ -193,6 +237,10 @@ return [
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
+<<<<<<< HEAD
+=======
+        'Arr' => Illuminate\Support\Arr::class,
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
@@ -222,6 +270,10 @@ return [
         'Schema' => Illuminate\Support\Facades\Schema::class,
         'Session' => Illuminate\Support\Facades\Session::class,
         'Storage' => Illuminate\Support\Facades\Storage::class,
+<<<<<<< HEAD
+=======
+        'Str' => Illuminate\Support\Str::class,
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,

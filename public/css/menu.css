@@ -1,0 +1,90 @@
+
+footer{
+    background-color: white;
+   
+}
+
+#slider{
+    margin: 20px;
+}
+
+.wrapper-img-top img {
+    width: 100%;
+}
+
+button.navbar-toggler {
+    background-color: white;
+}
+
+a.nav-link {
+    color: white !important;
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
+a.nav-link:hover{
+    color: #c79316 !important;
+}
+
+img{
+    width: 200px ;
+    height: 150px;
+}
+
+#foot{
+    background-color: #00162c;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+#bandgold{
+    background-color: #c79316;
+    height: 25px;
+}
+
+#redes{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+
+}
+
+#patrocinadores{
+    width: 200px ;
+    height: 150px;
+    margin: 10px;
+    padding: 10 px;
+}
+
+#barra{
+    background-color: #00162c !important;
+}
+#title{
+color: #00162c 
+ 
+}
+.card-img-top{
+width: 200px;
+height: 200px;
+
+}
+
+#card{
+    margin: 5px;    
+}
+#unis{
+    height: 50px;
+    width: 50px;
+}
+.btn-primary{
+    background-color: #00162c;
+    border-color: #00162c;
+}
+.btn-primary:hover{
+    background-color: #c79316;
+}

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 let mix = require('laravel-mix');
+=======
+const mix = require('laravel-mix');
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +15,10 @@ let mix = require('laravel-mix');
  |
  */
 
+<<<<<<< HEAD
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+=======
+mix.js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006

@@ -4,6 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Hash;
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -48,9 +52,15 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
+<<<<<<< HEAD
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+=======
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
         ]);
     }
 
@@ -60,6 +70,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+<<<<<<< HEAD
     protected function create(array $data)
     {
         return User::create([
@@ -67,5 +78,24 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+=======
+    protected function create(UserRequest $request)
+    {   
+            $user = new User;
+            $user->name = $request->input('name');
+            $user->email = $request->input('email');
+            $user->password = bcrypt( $request->input('password') );
+            
+            if(User::where('email', $user->email)->exists()){
+                return back()->with('info','El usuario ya existe');
+            }else{
+                $user->save();
+                $user
+                ->roles()
+                ->attach(Role::where('name', 'admin')->first());
+                return redirect("/home");
+            }
+            
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
     }
 }

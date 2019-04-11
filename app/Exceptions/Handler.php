@@ -3,17 +3,25 @@
 namespace App\Exceptions;
 
 use Exception;
+<<<<<<< HEAD
 use Illuminate\Auth\AuthenticationException;
+=======
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
 {
     /**
+<<<<<<< HEAD
      * A list of the exception types that should not be reported.
+=======
+     * A list of the exception types that are not reported.
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
      *
      * @var array
      */
     protected $dontReport = [
+<<<<<<< HEAD
         \Illuminate\Auth\AuthenticationException::class,
         \Illuminate\Auth\Access\AuthorizationException::class,
         \Symfony\Component\HttpKernel\Exception\HttpException::class,
@@ -26,6 +34,23 @@ class Handler extends ExceptionHandler
      * Report or log an exception.
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
+=======
+        //
+    ];
+
+    /**
+     * A list of the inputs that are never flashed for validation exceptions.
+     *
+     * @var array
+     */
+    protected $dontFlash = [
+        'password',
+        'password_confirmation',
+    ];
+
+    /**
+     * Report or log an exception.
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
      *
      * @param  \Exception  $exception
      * @return void
@@ -46,6 +71,7 @@ class Handler extends ExceptionHandler
     {
         return parent::render($request, $exception);
     }
+<<<<<<< HEAD
 
     /**
      * Convert an authentication exception into an unauthenticated response.
@@ -62,4 +88,6 @@ class Handler extends ExceptionHandler
 
         return redirect()->guest(route('login'));
     }
+=======
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 }

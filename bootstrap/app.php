@@ -12,7 +12,11 @@
 */
 
 $app = new Illuminate\Foundation\Application(
+<<<<<<< HEAD
     realpath(__DIR__.'/../')
+=======
+    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 );
 
 /*

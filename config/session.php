@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Str;
+
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 return [
 
     /*
@@ -12,7 +17,11 @@ return [
     | you may specify any of the other wonderful drivers provided here.
     |
     | Supported: "file", "cookie", "database", "apc",
+<<<<<<< HEAD
     |            "memcached", "redis", "array"
+=======
+    |            "memcached", "redis", "dynamodb", "array"
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
     |
     */
 
@@ -29,7 +38,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'lifetime' => 120,
+=======
+    'lifetime' => env('SESSION_LIFETIME', 120),
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 
     'expire_on_close' => false,
 
@@ -70,7 +83,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'connection' => null,
+=======
+    'connection' => env('SESSION_CONNECTION', null),
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 
     /*
     |--------------------------------------------------------------------------
@@ -90,6 +107,7 @@ return [
     | Session Cache Store
     |--------------------------------------------------------------------------
     |
+<<<<<<< HEAD
     | When using the "apc" or "memcached" session drivers, you may specify a
     | cache store that should be used for these sessions. This value must
     | correspond with one of the application's configured cache stores.
@@ -97,6 +115,15 @@ return [
     */
 
     'store' => null,
+=======
+    | When using the "apc", "memcached", or "dynamodb" session drivers you may
+    | list a cache store that should be used for these sessions. This value
+    | must match with one of the application's configured cache "stores".
+    |
+    */
+
+    'store' => env('SESSION_STORE', null),
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 
     /*
     |--------------------------------------------------------------------------
@@ -122,7 +149,14 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'cookie' => 'laravel_session',
+=======
+    'cookie' => env(
+        'SESSION_COOKIE',
+        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+    ),
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 
     /*
     |--------------------------------------------------------------------------
@@ -176,4 +210,22 @@ return [
 
     'http_only' => true,
 
+<<<<<<< HEAD
+=======
+    /*
+    |--------------------------------------------------------------------------
+    | Same-Site Cookies
+    |--------------------------------------------------------------------------
+    |
+    | This option determines how your cookies behave when cross-site requests
+    | take place, and can be used to mitigate CSRF attacks. By default, we
+    | do not enable this as other CSRF protection services are in place.
+    |
+    | Supported: "lax", "strict"
+    |
+    */
+
+    'same_site' => null,
+
+>>>>>>> f0fe922445c2344da58c72c0a2dbd64b1195f006
 ];
